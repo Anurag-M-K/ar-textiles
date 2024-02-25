@@ -6,20 +6,8 @@ function Navbar() {
   const [navItem, setNavItem] = useState<boolean>(false);
   const menuRef = useRef(null);
 
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setNavItem(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
   const handleClick = () => {
+    console.log(navItem)
     setNavItem(!navItem);
   };
 
