@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative '>
       <div className=' absolute top-10 right-5  md:hidden'>
         <IoMdMenu className='' size={22} onClick={handleClick} color='black' />
       </div>

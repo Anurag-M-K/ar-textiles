@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 const firebaseConfig = { 
   apiKey: "AIzaSyAVJn044ZeUccK86PkdwUuCv9i2r-v0GPo",
   authDomain: "ar-textiles.firebaseapp.com",
@@ -12,6 +13,11 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 export const auth = getAuth()
 export const fireBaseAuth = getAuth(app)
+
+export {db}
+
+export const storage = getStorage(app)
