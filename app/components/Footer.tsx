@@ -6,7 +6,7 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 function Footer() {
   return (
 
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gray-800 text-white py-6 mt-10">
      
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
      

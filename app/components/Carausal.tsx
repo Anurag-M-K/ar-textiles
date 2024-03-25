@@ -1,17 +1,16 @@
-
-'use client';
-
+import Image from 'next/image'
 import { Carousel } from 'flowbite-react';
+import {firstImage} from '/cloths_carausal/images.jpeg'
 
 function Carausal() {
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 md:p-5 my-5">
+    <div className="h-56 sm:h-64 xl:h-1/2 2xl:h-screen md:p-5 my-5">
       <Carousel>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+        <img className='object-cover w-full h-56 sm:h-64 xl:h-1/2 2xl:h-screen' src='/cloths_carausal/carausal2.jpg' alt="..." />
+        <img  className='object-cover w-full h-56 sm:h-64 xl:h-1/2 2xl:h-screen' src="/cloths_carausal/crsl3.jpeg" alt="..." />
+        <img  className='object-cover w-full h-56 sm:h-64 xl:h-1/2 2xl:h-screen' src="/cloths_carausal/crsl4.webp" alt="..." />
+        <img  className='object-cover w-full h-56 sm:h-64 xl:h-1/2 2xl:h-screen' src="/cloths_carausal/crsl5.jpg" alt="..." />
+        <img  className='object-cover w-full h-56 sm:h-64 xl:h-1/2 2xl:h-screen' src="/cloths_carausal/crsl6.jpeg" alt="..." />
       </Carousel>
     </div>
   );
